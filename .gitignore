@@ -1,0 +1,6 @@
+.vscode/
+__pacache__/
+aa.py
+logs/
+utils/__pycache__/
+wandb/
