@@ -50,7 +50,7 @@ def evaluate(model, eval_dataloader, dataset_classes, tokenizer, device, args):
             similarity = (100.0 * image_features @ zeroshot_weights).softmax(dim=-1)
             
             # top 5 predictions
-            values, indices = similarity[0].topk(5)
+            values, indices = similarity.topk(5)
 
             label_class = classnames[labels.item()]
             
